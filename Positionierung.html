@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positionierung</title>
+</head>
+<style>
+
+    body{
+      background: #1b1b1b;
+    }
+
+    div {
+      width: 320px;
+      height: 140px;
+      padding: 15px;
+      text-align: center;
+      font-family: 'Angency FB', sans-serif;
+      font-size: 35px;
+      font-weight: bolder;
+    }
+
+    p {
+      text-align: center;
+      font-family: 'Angency FB', sans-serif;
+      font-size: 25px;
+
+    }
+
+    #one {
+      position: fixed;
+      background: #21315b;
+      z-index: 3;
+      opacity: .8;
+    }
+
+    #two {
+      position: relative;
+      left: 600px;
+      top: 320px;
+      background-color: rgb(0, 180, 140);
+      opacity: .6;
+      z-index: 2;
+    }
+
+    #three {
+      position: absolute;
+      left: 240px;
+      top: 120px;
+      background: #9f00ff;
+      z-index: 1;
+    }
+
+    #four {
+      position: absolute ;
+      left: 550px;
+      top: 250px;
+      background-color: rgb(157, 192, 91);
+      z-index: 0;
+    }
+</style>
+<body>
+    <div id="one">erste Box <p>position: fixed;</p></div>
+    <div id="two">zweite Box <p>position: relative; left 600px; top: 400px;</p></div>
+    <div id="three">dritte Box <p>position: absolute; left 200px; top: 800px;</p></div>
+    <div id="four">vierte Box <p>position: absolute; left 550px; top: 250px;</p></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

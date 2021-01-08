@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <title>Textformatieren</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+
+    .google {
+        font-family: 'Oxygen';
+        font-size: 22px;
+    }
+
+    th, td, span, p {
+        color: #7f00ff;
+    }
+
+    table, td, th {
+        border-collapse: collapse;
+        border: solid 2px #6f71ff;
+        table-layout: fixed;
+        padding: 10px;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    table {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    body {
+        background-color: #1b1b1b;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>CSS<br>Eigenschaften</th>
+            <th>CSS Werte</th>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>
+                <span style="font-size: 120%">120% von der Schriftart</span>
+                <span style="font-size: 2em;">2em 2 mal die Elternschriftgröße</span>
+                <span style="font-size: 1.5ex;">1.5ex 1.5 mal die Schriftgröße vom x</span>
+            </td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>
+                <span>nicht bold</span>
+                <span style="font-weight:bold;"> bold</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Google Font</td>
+            <td class="google">Hello</td>
+        </tr>
+    </table>
+
+    <br><br><br><br>
+
+    <table>
+        <tr>
+            <th>font-size</th>
+            <th>baue em und vh als Schriftgröße ein</th>
+        </tr>
+        <tr>
+            <td>Icons</td>
+            <td>
+                <i style="font-size: 20px"class="fas fa-car"></i>
+                <i style="font-size: 40px" class="fas fa-car"></i>
+                <i style="font-size: 60px" class="fas fa-car"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>font-weigth</td>
+            <td>
+                <span>normal|</span>
+                <span style="font-weight: bold;">bold|</span>
+                <span style="font-weight: bolder;">bolder|</span>
+                <span style="font-weight: lighter;">lighter</span>
+            </td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td style="font-style: italic;">italic = kursiv</td>
+        </tr>
+        <tr>
+            <td>text-indent</td>
+            <td style="text-indent: 50px;">Einrückung um deine 10 fache KN </td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td style="line-height: 50px;">Höhe der Zeile. Es ist nicht die Schriftgröße gemeint</td>
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td style="letter-spacing: 5px;">Abstände zwischen den einzelnen Buchstaben </td>
+        </tr>
+        <tr>
+            <td>word-spacing</td>
+            <td style="word-spacing: 5px;">Abstände zwischen den einzelnen Wörtern </td>
+        </tr>
+        <tr>
+            <td>font-variant</td>
+            <td style="font-variant: small-caps;">Schriftvariante: caps small</td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td style="text-decoration: line-through;">eine Textgestaltung: through underline, overline, line</td>
+        </tr>
+        <tr>
+            <td>text-transform</td>
+            <td style="text-transform: uppercase;">eine Textart capitalize, uppercase, lowercase, none</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Auf dieser Seite erhalten sie Informationen zu meinem Stundenplan.">
+    <meta name="keywords" content="Stundenplan, Plan, stundenplan">
+    <title>Stundenplan</title>
+    <style>
+        table, tr, td{
+            border: 2px solid #1b1b1b;
+            background-color:paleturquoise;
+            border-collapse: collapse; /*Rahmen fallen zusammen */
+            /* width: 50%; */
+            table-layout: fixed; /* Table layout braucht eine Width*/
+            padding: 10px;
+            text-align: center;
+            background-size: contain;
+            overflow: hidden;
+        }
+        th{
+            border: 2px solid #1b1b1b;
+            background-color: orange;
+            border-collapse: collapse; /*Rahmen fallen zusammen */
+            width: 50%;
+            table-layout: fixed;; /* Table layout braucht eine Width*/
+            padding: 10px;
+            text-align: center;
+            background-size: contain;
+            overflow: hidden;
+        }
+        #pause{
+            background-color: #1b1b1b;
+        }
+
+        body{
+          background-color: #1b1b1b;
+        }
+
+        .responsive{
+          width: 50%;
+          margin: auto;
+          height: 0;
+          padding-bottom: 100%;
+          position: relative;
+          border: none
+        }
+
+        .responsive table{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="responsive">
+    <table>
+        <tr>
+            <th colspan="2">Zeit</th>
+            <th colspan="2">Montag</th>
+            <th colspan="2">Dienstag</th>
+            <th colspan="2">Mittwoch</th>
+            <th colspan="2">Donnerstag</th>
+            <th colspan="2">Freitag</th>
+        </tr>
+        <tr>
+            <th colspan="2">8.00<br/> 1 <br/> 8.50</th>
+            <td colspan="2">AM<br/>SU,WL<br/>EP16</td>
+            <td colspan="2" rowspan="2">DBI_2<br/>BA,KC<br/>OG28 ,EP16</td>
+            <td colspan="2" rowspan="2">BWMB<br/>TR<br/>EP13</td>
+            <td colspan="2" rowspan="2">POS1U<br/>PO<br/>EP15</td>
+            <td colspan="2">POS1U<br/>PO<br/>TEAM3</td>
+        </tr>
+        <tr>
+            <th colspan="2">8.50<br/> 2 <br/> 9.40</th>
+            <td colspan="2">E1<br/>HO,WO<br/>EP11 ,EP16</td>
+            <td style="background-color: violet;">D<br/><s style="background-color: gray;">KN</s>,JM<br/>EP16</td>
+            <td style="background-color: violet;">RK<br/>WS<br/>EP16</td>
+        </tr>
+        <tr>
+            <th colspan="2">9.40<br/> 3 <br/> 10.30</th>
+            <td colspan="2">NW2C<br/>CL<br/>RCH</td>
+            <td colspan="2">LOAL<br/>KC<br/>EP16</td>
+            <td colspan="2">GES<br/>WO<br/>EP16</td>
+            <td colspan="2">NW2C<br/>CL<br/>RCH</td>
+            <td colspan="2">BWMR<br/>ED,KO<br/>EP14,EP16</td>
+        </tr>
+        <tr>
+            <th colspan="2">10.30<br/>10.45</th>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+        </tr>
+        <tr>
+            <th colspan="2">10.45<br/> 4 <br/> 11.35</th>
+            <td rowspan="2">POS1U<br/>PO<br/>TEAM3</td>
+            <td rowspan="2">TINF<br/>KW<br/>EP16</td>
+            <td colspan="2" style="background-color: yellow;">AM<br/>SU,WL<br/><s style="background-color: gray;">EP16</s></td>
+            <td colspan="2">LOAL<br/>KC<br/>EP16</td>
+            <td colspan="2">BWMB<br/>tr<br/>EP16</td>
+            <td colspan="2">E1<br/>HO,WO<br/>RPH ,EP16</td>
+        </tr>
+        <tr>
+            <th colspan="2">11.35<br/> 5 <br/> 12.25</th>
+            <td colspan="2">AM<br/>SU,WL<br/>EP16</td>
+            <td id="pause" colspan="2"</td>
+            <td colspan="2">D<br/>JM,KN<br/>OG36,EP16</td>
+            <td colspan="2">E1FE<br/>HO,WO<br/>RPH ,EP16</td>
+        </tr>
+        <tr>
+            <th colspan="2">12.25<br/> 6 <br/> 13.15</th>
+            <td colspan="2">GES<br/>WO<br/>EP16</td>
+            <td colspan="2">RK<br/>WS<br/>EP16</td>
+            <td colspan="2">BWMR<br/>ED,KO<br/>EP15,EDV4</td>
+            <td colspan="2">SOPK<br/>WO<br/>EP16</td>
+            <td id="pause" colspan="2"></td>
+        </tr>
+        <tr>
+            <th colspan="2">13.15<br/> 7 <br/> 14.00</th>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+            <td colspan="2">POS1U<br/>PO<br/>EP15</td>
+            <td id="pause" colspan="2"</td></td>
+            <td colspan="2">RK<br/>WS<br/>EP16</td>
+        </tr>
+        <tr>
+            <th colspan="2">14.00<br/> 8 <br/> 14.45</th>
+            <td id="pause" colspan="2"></td>
+            <td colspan="2" rowspan="2">FCE<br/>HO<br/>EP16</td>
+            <td colspan="2">NVS1<br/>LT<br/>EP15</td>
+            <td id="pause" colspan="2"></td>
+            <td colspan="2">NW2C<br/>CL<br/>RCH</td>
+        </tr>
+        <tr>
+            <th colspan="2">14.50<br/> 9 <br/> 15.35</th>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+            <td colspan="2" rowspan="2">BESP<br/>SD<br/>TURN,TURN2</td>
+
+        </tr>
+            <th colspan="2">15.35<br/> 10 <br/> 16.20</th>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+            <td id="pause" colspan="2"></td>
+    </table>
+  </div>
+</body>
+</html>

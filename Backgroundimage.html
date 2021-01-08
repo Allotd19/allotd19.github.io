@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroundimage</title>
+</head>
+<style>
+    body {
+        background: #1b1b1b;
+    }
+
+    .responsive{
+      float: right;
+      margin-right: 10px;
+      margin-top: 10vh;
+      width: 90%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative;
+      border: none
+    }
+
+    .responsive table{
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      border: none;
+    }
+
+    td, tr, table {
+        border: 4px solid #7f00ff;
+        border-collapse: collapse;
+
+    }
+
+    #one{
+      background-image:url(Images/mcanime.jpg);
+      background-position:center left;
+      background-repeat: repeat-x;
+      background-size: 150px;
+    }
+
+    #two{
+      background-image:url(Images/mebelike.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    #three{
+      background-image:url(Images/onlinehomework.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: 200px;
+    }
+
+    #four{
+      background-image:url(Images/thiccthighs.jpg);
+       background-position: bottom left;
+        background-repeat: no-repeat;
+         background-size: 200px;
+    }
+
+</style>
+<body>
+  <div class="responsive">
+    <table>
+        <tr>
+            <td id="one"></td>
+            <td id="two"></td>
+            <td id="three"></td>
+            <td id="four"></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodell</title>
+</head>
+<style>
+    body {
+        color: #ffffff;
+        background: #1b1b1b;
+        text-align: center;
+    }
+
+    .withoutLine {
+        float: left;
+        box-sizing: 160px;
+        width: 80px;
+        margin: 100px;
+        margin-bottom: 80px;
+        padding: 40px;
+        border: 80px solid rgb(0, 118, 0);
+        outline: 80px solid #21315b;
+    }
+
+    .withline {
+        float: left;
+        box-sizing: 160px;
+        width: 80px;
+        margin: 100px;
+        padding: 40px;
+        border: 80px solid  #21315b;
+        outline: 80px solid rgb(0, 118, 0);;
+    }
+
+    span {
+        margin: 5px;
+        background: #1f1f1f;
+        border: solid 4px #7f00ff;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+</style>
+<body>
+    <span style="float: left; margin-left: 64px; padding: 16px;">Text mit Padding</span>
+    <span style="float: left; height: 32px;">Text ohne Padding</span>
+    <span style="float: left; margin: 16px; height: 32px;">Diese Box hat 16 px Margin</span>
+    <br><br><br><br><br><br><br><br>
+    <div class="withoutLine">
+        Not Copied
+    </div>
+    <div class="withline">
+        Not Copied
+    </div>
+</body>
+</html>

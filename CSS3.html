@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagesübung 07</title>
+    <style>
+      body{
+        background: #1b1b1b;
+      }
+
+      table, td{
+        margin: auto;
+        border-collapse: collapse;
+        border: 2px solid white;
+        color: #ffffff;
+        font-family: 'Agency FB', Arial, sans-serif;
+     }
+
+     td img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      padding: 8px;
+    }
+
+    h4{
+      text-align: center;
+    }
+
+    .opacity:hover {
+      opacity: .6;
+    }
+
+    .shadow:hover {
+      box-shadow: 16px 16px 12px #0b0b0b;;
+    }
+
+    .border:hover {
+      border-radius: 80px;
+    }
+
+    .rotate:hover {
+      transform: rotate(160deg);
+    }
+
+    .scale:hover {
+      transform: scale(1.6);
+    }
+
+    .animation {
+      transition: transform ease-in-out 1s;
+    }
+
+    .animation:hover {
+      transform: rotate(1080deg) scale(1.6);
+    }
+
+    .images:hover {
+      background-image: url("Images/Unbenannt7.png"), url("Images/Unbenannt6.png");
+      background-position: left top;
+      background-repeat: no-repeat, repeat;
+      color: white;
+    }
+
+    </style>
+</head>
+
+<body>
+    <table>
+      <tr>
+        <td>
+          <h4>Original</h4>
+          <img src="Images/Unbenannt.png" alt="Error404">
+        </td>
+        <td>
+          <h4>Bild mit opacity (0.6)</h4>
+          <img class="opacity" src="Images/Unbenannt.png" alt="Error404">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Original</h4>
+          <img src="Images/Unbenannt1.png" alt="Error404">
+        </td>
+        <td>
+          <h4>Bild mit Schatten</h4>
+          <img class="shadow" src="Images/Unbenannt1.png" alt="Error404">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Original</h4>
+          <img src="Images/Unbenannt8.png" alt="Error404">
+        </td>
+        <td>
+          <h4>Bild mit Borderradius</h4>
+          <img class="border" src="Images/Unbenannt8.png" alt="Error404">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Original</h4>
+          <img src="Images/Unbenannt3.png" alt="Error404">
+        </td>
+      <td>
+        <h4>Bild mit Transformation (160 Grad)</h4>
+        <img class="rotate" src="Images/Unbenannt3.png" alt="Error404">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4>Original></h4>
+        <img src="Images/Unbenannt4.png" alt=" ">
+      </td>
+      <td>
+        <h4>Bild mit Scale (Zoom x1.6)</h4>
+        <img class="scale" src="Images/Unbenannt4.png" alt="Error404">
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Original</h4>
+          <img src="Images/Unbenannt5.png" alt="Error404">
+        </td>
+         <td>
+          <h4>Bild mit verzögerter Animation</h4>
+          <img class="animation" src="Images/Unbenannt5.png" alt="Error404">
+         </td>
+        </tr>
+        <tr>
+          <td>
+            <h4>Original</h4>
+            <img src="Images/Unbenannt6.png" alt="Error404">
+            <img src="Images/Unbenannt7.png" alt="Error404">
+          </td>
+          <td class="images">
+            <h4>Bild mit mehreren Hintergrundbildern</h4>
+          </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Allwinger</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <body>
+    <nav>
+      <div class="logo">Allwinger</div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <label for="btn-1" class="show">Links +</label>
+          <a href="#">Links</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="http://members.aon.at/allwinger/">Allwinger</a></li>
+            <li><a href="https://www.google.at/">Google</a></li>
+            <li><a href="https://www.youtube.com/?hl=de&gl=AT">Youtube</a></li>
+            <li><a href="https://www.willhaben.at/iad">Willhaben</a></li>
+            <li><a href="https://www.netflix.com/browse">Netflix</a></li>
+            <li><a href="https://www.amazon.de/ref=nav_logo">Amazon</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn-2" class="show">Services +</label>
+          <a href="#layer1">Music</a>
+          <input type="checkbox" id="btn-2">
+          <ul>
+            <li><a href="#layer1">Rap/Hip Hop</a></li>
+            <li><a href="#layer1">Rap/Hip Hop 2</a></li>
+            <li>
+              <label for="btn-3" class="show">More +</label>
+              <a href="#">More <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+                <li><a href="#">Song-1</a></li>
+                <li><a href="#">Song-2</a></li>
+                <li><a href="#">Song-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#hü">HÜ-Tinf</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="paralax"></div>
+        <div id="layer1" class="layer">
+
+          <br> <br> <br> <br>
+          <center>
+              <h2>Music</h2>
+          </center>
+
+          <div class="body">
+            <div class="player">
+              <div class="image">
+                <img src="Images/SFW40230.jpg" alt="">
+              </div>
+              <audio controls>
+                <source src="Song.mp3" type="audio/mp3">
+              </audio>
+            </div>
+            <div class="player">
+              <div class="image">
+                <img src="Images/SFW40230.jpg" alt="">
+              </div>
+              <audio controls>
+                <source id="playlist" src="Song1.mp3" type="audio/mp3">
+              </audio>
+            </div>
+            <div class="player">
+              <div class="image">
+                <img src="Images/SFW40230.jpg" alt="">
+              </div>
+              <audio controls>
+                <source src="Song1.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+          <div id="hü" class="iframe">
+            <iframe src="index1.html"></iframe>
+          </div>
+        </div>
+    </div>
+  </body>
+  <footer id="contact">
+    <div class="container">
+      <div class="wrapper">
+        <div class="button">
+          <div class="icon"><i class="fab fa-twitch"></i></div>
+          <a href="https://www.twitch.tv/err0r53" target="_blank">Twitch</a>
+        </div>
+        <div class="button">
+          <div class="icon"><i class="fab fa-instagram"></i></div>
+          <a href="https://www.instagram.com/0ll0_all/" target="_blank">Instagram</a>
+        </div>
+        <div class="button">
+          <div class="icon"><i class="fab fa-youtube"></i></div>
+          <a href="https://www.youtube.com/channel/UCwa6ny06_ZLK_EVmOfIz0xg" target="_blank">Youtube</a>
+        </div>
+        <div class="right">
+          <div class="icon"><i class="fas fa-mail-bulk"></i></div>
+          <a href="https://mail.google.com/mail/u/0/?ogbl#inbox" target="_blank">My Mail</a>
+        </div>
+      </div>
+      <div class="social-menu">
+        <ul>
+          <li><a href="https://www.twitch.tv/err0r53"><i class="fa fa-twitch"></i></a></li>
+          <li><a href="https://www.instagram.com/0ll0_all/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCwa6ny06_ZLK_EVmOfIz0xg"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://mail.google.com/mail/u/0/?ogbl#inbox"><i class="fas fa-mail-bulk"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>
