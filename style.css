@@ -373,11 +373,11 @@ footer{
   height: 100px;
   width: 100%;
   place-items: center;
-  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 
 .wrapper{
   margin-top: 16px;
+  padding: 8px;
   transition: all 0.3s ease-out;
   left: 0;
   bottom: 0;
