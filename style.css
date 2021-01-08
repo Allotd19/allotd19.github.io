@@ -275,7 +275,7 @@ nav ul ul ul li{
 
 .paralax {
   background-image: url("https://media04.meinbezirk.at/article/2019/03/04/7/18124527_L.jpg?1551686156");
-  background-color: #000000;
+  background-color: #1b1b1b;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,7 +293,7 @@ nav ul ul ul li{
 }
 
 .layer {
-  height: 1000px;
+  height: 940px;
   background-color: #1b1b1b;
   font-size: 36px;
   margin-top: -50px;
@@ -311,7 +311,8 @@ p{
 }
 
 .body{
-  margin-top: -200px;
+  margin-top: -120px;
+  margin-bottom: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,7 +351,6 @@ p{
 }
 
 .iframe{
-  margin-top: -200px;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
@@ -368,16 +368,16 @@ p{
 }
 
 
- html, footer{
+footer{
   display: grid;
-  height: 100%;
+  height: 100px;
   width: 100%;
   place-items: center;
   background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 
 .wrapper{
-  margin-top: 1000px;
+  margin-top: 16px;
   transition: all 0.3s ease-out;
   left: 0;
   bottom: 0;
