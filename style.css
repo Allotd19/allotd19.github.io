@@ -371,6 +371,7 @@ p{
 
  html, footer{
   display: grid;
+  margin-top: 160px;
   height: 100%;
   width: 100%;
   place-items: center;
@@ -378,7 +379,7 @@ p{
 }
 
 .wrapper{
-  margin-top: 1200px;
+  margin-top: 1000px;
   transition: all 0.3s ease-out;
   left: 0;
   bottom: 0;
