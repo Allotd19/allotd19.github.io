@@ -18,6 +18,10 @@ nav{
 
 }
 
+h2{
+  color: #fff;
+}
+
 nav:after{
   content: '';
   clear: both;
