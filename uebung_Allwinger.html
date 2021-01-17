@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Übung">
+  <meta name="description" content="Aufgabe vom 17.01.2021">
+  <title>Allwinger JS-Uebung</title>
+  <link rel="stylesheet" href="style3.css">
+
+
+    <script>
+
+        // 1.Uebung
+
+        function minMaxOREqual() {
+            let x = document.function1.valueX.value;
+            let y = document.function1.valueY.value;
+
+            if (x == "" || y == "") {
+              alert("Error404");
+            } /*else if (Number.isInteger(x) == false || Number.isInteger(y) == false) {
+              alert("Error404");
+            }*/else if (x > y) {
+               alert("Die erste Zahl ist groesser");
+            } else if (x < y) {
+               alert("Die zweite Zahl ist groesser");
+            } else {
+               alert("Die Zahlen sind gleich gross");
+            }
+        }
+
+        // 2.Uebung
+
+        function calcSum() {
+
+            let z = document.function2.valueZ.value;
+            let sum = 0;
+
+            if (z == "") {
+              alert("Geben Sie eine Zahl ein");
+            }else {
+              for (let i = 0; i <= z; i++) {
+                  sum += i;
+              }
+
+              alert("Die Summe ist = " + sum);
+            }
+        }
+
+        // 3.Uebung
+
+        function divisibility() {
+            let Ω = document.function3.valueΩ.value;
+            let i = 0;
+
+            if (Ω < 1 || Ω > 1000) {
+              alert("Sie muessen ein Zahl zwischen 1 und 1000 eingeben");
+            }
+            else {
+              while (Ω % 5 == 0) {
+                  Ω = Ω / 5;
+                  i++ ;
+              }
+              alert("Es ist " + i + " * Teilbar");
+
+              //Beim ersten Durlauf würde er immer den Counter erhöhen,
+              //darum muss man mit einer kopfgesteuerten Schleife arbeiten.
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+  <form class="body" name="function1">
+    <div class="form">
+      <input autocomplete="off" type="number" name="valueX" required>
+      <label for="valueX" class="labelValueX">
+        <span class="contentValueX">1. Ganzzahl</span>
+      </label>
+    </div>
+    <div class="form">
+      <input autocomplete="off" type="number" name="valueY" required>
+      <label for="valueX" class="labelValueX">
+        <span class="contentValueX">2. Ganzzahl</span>
+      </label>
+    </div>
+    <div class="button">
+      <input autocomplete="off" type="button" value="Vergleichen" onclick="minMaxOREqual();">
+    </div>
+  </form>
+
+  <form class="body" name="function2">
+    <div class="form">
+      <input autocomplete="off" type="number" name="valueZ" required>
+      <label for="valueX" class="labelValueX">
+        <span class="contentValueX">Zahl</span>
+      </label>
+    </div>
+    <div class="button1">
+      <input autocomplete="off" type="button" value="Summe berechnen" onclick="calcSum();">
+    </div>
+  </form>
+
+  <form class="body" name="function3">
+    <div class="form">
+      <input autocomplete="off" type="number" name="valueΩ" required>
+      <label for="valueX" class="labelValueX">
+        <span class="contentValueX">Zahl</span>
+      </label>
+    </div>
+    <div class="button2">
+      <input autocomplete="off" type="button" value="Teilbarkeit berechnen" onclick="divisibility();">
+    </div>
+  </form>
+</body>
