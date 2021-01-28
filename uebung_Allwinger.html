@@ -14,15 +14,15 @@
         // 1.Uebung
 
         function minMaxOREqual() {
-            let x = document.function1.valueX.value;
-            let y = document.function1.valueY.value;
+            let x = parseInt(document.function1.valueX.value);
+            let y = parseInt(document.function1.valueY.value);
 
             if (x == "" || y == "") {
               alert("Error404");
-            } /*else if (Number.isInteger(x) == false
+            } else if (Number.isInteger(x) == false
             || Number.isInteger(y) == false) {
               alert("Error404");
-            }*/else if (x > y) {
+            }else if (x > y) {
                alert("Die erste Zahl ist groesser");
             } else if (x < y) {
                alert("Die zweite Zahl ist groesser");
@@ -64,10 +64,6 @@
                   i++ ;
               }
               alert("Es ist " + i + " * Teilbar");
-
-              //Beim ersten Durlauf würde er immer den Counter erhöhen,
-              //darum muss man mit einer kopfgesteuerten Schleife arbeiten.
-
             }
         }
 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Urlaub, Holiday, HTML, CSS, Marcus Schweighofer">
+    <meta name="description" content="Marcus Schweighofer ist Schüler der HTBLA Kaindorf">
+    <link rel="stylesheet" href="style4.css">
+    <title>Uebung_JS2</title>
+
+    <script>
+
+      function addition() {
+        let x = document.calculater.valueX.value;
+        let y = document.calculater.valueY.value;
+
+        if (x == "" || y == "") {
+          return alert("Error404");
+        }
+
+        document.calculater.result.value = parseInt(x) + parseInt(y);
+      }
+
+      function subtraction() {
+        let x = document.calculater.valueX.value;
+        let y = document.calculater.valueY.value;
+
+        if (x == "" || y == "") {
+          return alert("Error404");
+        }
+
+        document.calculater.result.value = parseInt(x) - parseInt(y);
+      }
+
+      function multplication() {
+        let x = document.calculater.valueX.value;
+        let y = document.calculater.valueY.value;
+
+        if (x == "" || y == "") {
+          return alert("Error404");
+        }
+
+        document.calculater.result.value = parseInt(x) * parseInt(y);
+      }
+
+      function division() {
+        let x = document.calculater.valueX.value;
+        let y = document.calculater.valueY.value;
+
+        if (x == "" || y == "") {
+          return alert("Error404");
+        }
+
+        document.calculater.result.value = parseInt(x) / parseInt(y);
+      }
+
+      function modulo() {
+        let x = document.calculater.valueX.value;
+        let y = document.calculater.valueY.value;
+
+        if (x == "" || y == "") {
+          return alert("Error404");
+        }
+
+        document.calculater.result.value = parseInt(x) % parseInt(y);
+      }
+
+      function buildString() {
+        let str = document.profile.name.value;
+        str += " is " + document.profile.age.value + " Years old.";
+        str += " The gender is ";
+
+        if (document.profile.gender[0].checked) {
+          str += "male.";
+        } else if (document.profile.gender[1].checked) {
+          str += "female.";
+        } else {
+          str += "an other Gender.";
+        }
+
+        str += " The hobbies of that person are/is";
+
+        if (document.profile.hobbies[0].checked) {
+          str += ", watching Anime";
+        }
+        if (document.profile.hobbies[1].checked) {
+          str += ", runnig";
+        }
+        if (document.profile.hobbies[2].checked) {
+          str += ", playing Videogames";
+        }
+
+        str += ". Trainings per Week: " + document.profile.trainings.value;
+          document.profile.textarea.value = str;
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Calculater</h1>
+    <form class="body" name="calculater">
+        <table>
+            <tr>
+                <td class="form"><input autocomplete="off" type="number" name="valueX" required>
+                <label for="valueX" class="labelValueX">
+                  <span class="contentValueX">1. Integer</span>
+                </label></td>
+                <td><input type="button" value="addition" onclick="addition();"></td>
+                <td><input type="button" value="Subtraction" onclick="subtraction();"></td>
+            </tr>
+            <tr>
+              <td class="form"><input autocomplete="off" type="number" name="valueY" required>
+              <label for="valueX" class="labelValueX">
+                <span class="contentValueX">2. Integer</span>
+              </label></td>
+                <td><input type="button" value="Multplication" onclick="multplication();"></td>
+                <td><input type="button" value="Division" onclick="division();"></td>
+            </tr>
+            <tr>
+              <td class="form"><input id="result" autocomplete="off" type="text" name="result" required>
+              <label for="valueX" class="labelValueX">
+                <span class="contentValueX">Result</span>
+              </label></td>
+                <td><input type="button" value="Modulo" onclick="modulo();"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+    <br><br><br><br>
+
+    <h1>Profile</h1>
+
+    <form class="body" name="profile">
+      <table>
+        <tr>
+          <td class="form">
+            <input autocomplete="off" type="text" name="name" required>
+            <label for="valueX" class="labelValueX">
+              <span class="contentValueX">Name</span>
+            </label>
+          </td>
+          <td>
+            Gender:
+            <input type="radio" name="gender" id="man" checked><label for="man">Male</label>
+            <input type="radio" name="gender" id="woman"><label for="woman">Female</label>
+            <input type="radio" name="gender" id="otherGenders"><label for="otherGenders">Other Genders</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="form">
+            <input autocomplete="off" type="number" name="age" required>
+            <label for="valueX" class="labelValueX">
+              <span class="contentValueX">Age</span>
+            </label>
+          </td>
+          <td>
+            Hobbies:
+            <input type="checkbox" name="hobbies" id="anime"><label for="anime">Anime</label>
+            <input type="checkbox" name="hobbies" id="runnig"><label for="runnig">Running</label>
+            <input type="checkbox" name="hobbies" id="games"><label for="games">Videogames</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+
+            <p>Trainings per Week:</p>
+
+            <select name="trainings" id="trainings" size="7" multiple="multiple">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select></td>
+            <td><input type="button" value="Build Profile" onclick="buildString();"></td>
+          </tr>
+          <td colspan="2"><textarea name="textarea" id="textare1" cols="30" rows="10"></textarea> </td>
+      </table>
+    </form>
+</body>

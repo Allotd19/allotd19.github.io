@@ -1,0 +1,111 @@
+body{
+  background: #1b1b1b;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.body{
+  width: 80%;
+  height: 80%;
+  margin-top: 32px;
+  margin-left: 16px;
+}
+
+.form{
+  width: 48%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.form input{
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-top: 24px;
+  padding-left: 6px;
+  border: none;
+  background: #1b1b1b;
+  outline: none;
+}
+
+.form label{
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.form label::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #7f00ff;
+  transform: translate(-100%);
+  transition: all .3s ease;
+}
+
+.contentValueX{
+  position: absolute;
+  bottom: 6px;
+  left: 4px;
+  transition: all .3s ease;
+}
+
+.form input:focus + .labelValueX .contentValueX,
+.form input:valid + .labelValueX .contentValueX{
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #7f00ff;
+}
+
+.form input:focus + .labelValueX::after,
+.form input:valid + .labelValueX::after{
+  transform: translate(0%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=button], input[type=reset] {
+  width: 100%;
+  height: 100%;
+
+}
+
+h2 {
+    float: left;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
+#result{
+  pointer-events: none;
+}
+
+textarea{
+  width:100%;
+  margin: -8px;
+  margin-top: 8px
+}
