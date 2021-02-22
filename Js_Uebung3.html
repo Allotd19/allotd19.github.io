@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Urlaub, Holiday, HTML, CSS, Marcus Schweighofer">
+    <meta name="description" content="Marcus Schweighofer ist Schüler der HTBLA Kaindorf">
+    <link rel="stylesheet" href="style4.css">
+    <title>Uebung_JS3</title>
+
+    <script>
+
+      function example_1() {
+        let sum = 0;
+
+        for (let i = 0; i < 1000; i++) {
+            if ((i % 3 == 0) || i % 5 == 0) {
+              //Count wird erhöht falls mod 3 oder 5
+              sum += i;
+            }
+        }
+        document.calculater.valueX.value = sum;
+        return alert("If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.");
+      }
+
+      function example_2() {
+        let sum = 200;
+        let coinValues = [ 1, 2, 5, 10, 20, 50, 100, 200 ];
+        let combinations = new Uint32Array(sum + 1); //Wieso keinen Plan aber sonst gibt er immer NaN aus, und dann hab ich gegoogled wie man eine new int Array macht.
+
+        combinations[0] = 1; //Ist damit bei combinations[j - coinValues[i]] einen Wert beim ersten durchlauf hat
+
+        for (let i = 0; i < coinValues.length; i++) {
+          //Die for i hat den Wert 0 und der ist dazu da, um die Art/Wert der Münze zu bestimmen
+          for (let j = coinValues[i]; j <= sum; j++) {
+            //Geht solange bis die summe 200 pence erreicht und combinations auf der Stelle j wird addiert mit dem wert combinations auf der Stelle j - der Art der Münze
+            combinations[j] += combinations[j - coinValues[i]];
+          }
+        }
+        document.calculater.valueY.value = combinations[200]; // Nimmt den letzten Wert also alle Durchgänge die davor ausgeführt worden sind
+        return alert("In the United Kingdom the currency is made up of pound (£) and pence (p). There are eight coins in general circulation: 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), and £2 (200p). It is possible to make £2 in the following way: 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p. How many different ways can £2 be made using any number of coins?");
+      }
+
+    </script>
+</head>
+<body>
+    <h1>Examples</h1>
+    <form class="body" name="calculater">
+        <table>
+            <tr>
+                <td class="form"><input class="result" autocomplete="off" type="text" name="valueX" required>
+                <label for="valueX" class="labelValueX">
+                  <span class="contentValueX">1. Example</span>
+                </label></td>
+                <td><input type="button" value="Run" onclick="example_1();"></td>
+            </tr>
+            <tr>
+              <td class="form"><input class="result" autocomplete="off" type="text" name="valueY" required>
+              <label for="valueX" class="labelValueX">
+                <span class="contentValueX">2. Example</span>
+              </label></td>
+                <td><input type="button" value="Run" onclick="example_2();"></td>
+            </tr>
+        </table>
+      </form>
+</body>
