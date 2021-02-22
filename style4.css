@@ -100,7 +100,7 @@ table{
   text-align: center;
 }
 
-.result{
+#result{
   pointer-events: none;
 }
 
