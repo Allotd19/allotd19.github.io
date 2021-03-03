@@ -8,6 +8,16 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+
+  <script type="text/javascript">
+  function myFunction() {
+    let elmnt = document.getElementById("HU");
+    elmnt.scrollIntoView();
+  }
+  </script>
+
+
   <body>
     <nav>
       <div class="logo">Allwinger</div>
@@ -17,6 +27,25 @@
       <input type="checkbox" id="btn">
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li>
+          <label for="btn-1" class="show">Java-HÜ +</label>
+          <a href="#">Java-HÜ</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a onclick="myFunction()" href="uebung_Allwinger.html" target="HÜ_TINF">
+              <i class="fas fa-file"></i>
+              <span>JS_HÜ-1</span>
+            </a></li>
+            <li><a onclick="myFunction()" href="Js_Uebung2.html" target="HÜ_TINF">
+              <i class="fas fa-file"></i>
+              <span>JS_HÜ-2</span>
+            </a></li>
+            <li><a onclick="myFunction()" href="Js_Uebung3.html" target="HÜ_TINF">
+              <i class="fas fa-file"></i>
+              <span>JS_HÜ-3</span>
+            </a></li>
+          </ul>
+        </li>
         <li>
           <label for="btn-1" class="show">Links +</label>
           <a href="#">Links</a>
@@ -49,7 +78,7 @@
             </li>
           </ul>
         </li>
-        <li><a href="#hü">HÜ-Tinf</a></li>
+        <li><a onclick="myFunction()">HÜ-Tinf</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -89,7 +118,7 @@
           </div>
         </div>
     </div>
-    <div id="hü" style="margin-bottom: 5%"></div>
+    <div id="HU" style="margin-bottom: 5%"></div>
     <div class="iframe">
       <iframe src="index1.html"></iframe>
     </div>

@@ -10,7 +10,27 @@
 
     <script>
 
+    function show(i) {
+      let tag = document.getElementsByTagName("p");
+
+      switch (i) {
+
+        case (0): document.getElementById("img").src = ""; tag[0].innerText = "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000."; break;
+        case (1): document.getElementById("img").src = "Images/excel.png"; tag[0].innerText = "In the United Kingdom the currency is made up of pound (£) and pence (p). There are eight coins in general circulation: 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), and £2 (200p). It is possible to make £2 in the following way: 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p. How many different ways can £2 be made using any number of coins?"; break;
+        case (2): document.getElementById("img").src = "Images/HU_91.png"; tag[0].innerText = ""; break;
+
+        default: return null;
+      }
+    }
+
+    function showImg(i) {
+
+    }
+
       function example_1() {
+
+        show(0);
+
         let sum = 0;
 
         for (let i = 0; i < 1000; i++) {
@@ -20,10 +40,12 @@
             }
         }
         document.calculater.valueX.value = sum;
-        return alert("If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.");
       }
 
       function example_2() {
+
+        show(1);
+
         let sum = 200;
         let coinValues = [ 1, 2, 5, 10, 20, 50, 100, 200 ];
         let combinations = new Uint32Array(sum + 1); //Uint32Array erstellt array mit 201 Stellen die automatisch mit 0 initialisiert werden und man muss dass benutzen weil die zahl die herauskommt zu gross ist
@@ -34,13 +56,14 @@
             //Geht solange bis die summe 200 pence erreicht und combinations auf der Stelle j wird addiert mit dem wert combinations auf der Stelle j - der Art der Münze
             combinations[j] += combinations[j - coinValues[i]];
           }
-          alert(combinations[200]);
         }
         document.calculater.valueY.value = combinations[200]; // Nimmt den letzten Wert also alle Durchgänge die davor ausgeführt worden sind
-        return alert("In the United Kingdom the currency is made up of pound (£) and pence (p). There are eight coins in general circulation: 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), and £2 (200p). It is possible to make £2 in the following way: 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p. How many different ways can £2 be made using any number of coins?");
       }
 
       function example_3(n) {
+
+        show(2);
+
         let a = 0;
         for (let x1 = 0; x1 <= n; x1++) {
           for (let y1 = 0; y1 <= n; y1++) {
@@ -58,7 +81,6 @@
           }
         }
         document.calculater.valueZ.value = a / 2;
-        alert("Weil ich kein Bild machen will: https://projekteuler.de/problems/91")
       }
     </script>
 </head>
@@ -72,6 +94,7 @@
                   <span class="contentValueX">1. Example</span>
                 </label></td>
                 <td><input type="button" value="Run" onclick="example_1();"></td>
+                <p></p>
             </tr>
             <tr>
               <td class="form"><input class="result" autocomplete="off" type="text" name="valueY" required>
@@ -79,6 +102,7 @@
                 <span class="contentValueX">2. Example</span>
               </label></td>
                 <td><input type="button" value="Run" onclick="example_2();"></td>
+                <p></p>
             </tr>
             <tr>
               <td class="form"><input class="result" autocomplete="off" type="text" name="valueZ" required>
@@ -86,6 +110,7 @@
                 <span class="contentValueX">3. Example</span>
               </label></td>
                 <td><input type="button" value="Run" onclick="example_3(50);"></td>
+                <img id="img" width="100%">
             </tr>
         </table>
       </form>
