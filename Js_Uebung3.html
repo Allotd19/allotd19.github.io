@@ -33,11 +33,13 @@
 
       function example_1() {
 
+        var n = prompt("Please enter your number", "1000");
+
         show(0);
 
         let sum = 0;
 
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < n; i++) {
             if ((i % 3 == 0) || i % 5 == 0) {
               //Count wird erhöht falls mod 3 oder 5
               sum += i;
