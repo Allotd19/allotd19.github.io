@@ -21,7 +21,7 @@ setInterval(function(){
     let holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     let cTop = -(530-birdTop);
 
-    if((birdTop>460)||((pipeLeft<50)&&(pipeLeft>-50)&&((cTop<holeTop - 10)||(cTop>holeTop+134)))){
+    if((birdTop>484)||((pipeLeft<50)&&(pipeLeft>-50)&&((cTop<holeTop - 10)||(cTop>holeTop+134)))){
         alert("Game over.\nScore: "+(cnt-1));
         bird.style.top = 100 + "px";
         cnt=0;
