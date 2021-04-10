@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    background: #1b1b1b;  
+    background: #1b1b1b;
 }
 
 
@@ -45,10 +45,10 @@ p{
     width: 50px;
     height: 50px;
     background-image: url('flappy-bird.png');
-    background-color: hotpink;
+    /* background-color: hotpink; */
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: transparent; */
+    background-color: transparent;
     position: absolute;
     top: 100px;
     z-index: 1;
