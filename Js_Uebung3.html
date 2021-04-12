@@ -62,6 +62,7 @@
             //Geht solange bis die summe 200 pence erreicht und combinations auf der Stelle j wird addiert mit dem wert combinations auf der Stelle j - der Art der Münze
             combinations[j] += combinations[j - coinValues[i]];
           }
+          alert(combinations[200]);
         }
         document.calculater.valueY.value = combinations[200]; // Nimmt den letzten Wert also alle Durchgänge die davor ausgeführt worden sind
       }
